@@ -31,4 +31,14 @@
 		- Title: bold 92px
 		- subscribe: regular 20px
 
+	*Button
+		- Text: Bold 18px
+
 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body,
+input {
+  font-family: 'Montserrat', sans-serif;
+}
