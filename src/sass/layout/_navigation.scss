@@ -71,6 +71,7 @@
     list-style: none;
     padding: 0;
     top: 100%;
+    height: 100vh;
     left: -15px;
     background: $clr-text-dark;
     display: flex;
@@ -84,10 +85,10 @@
   }
 
   &__item {
+    text-align: center;
     background: $clr-text-dark;
-    display: block;
     padding: 0.5rem 0;
-
+    padding-right: 1rem;
     &:not(:last-child) {
       border-bottom: 1px solid $clr-primary;
     }
