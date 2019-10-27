@@ -1,4 +1,9 @@
-document.addEventListener('click', function (event) {
-	if (!event.target.matches('#click-me')) return;
-	alert('You clicked my heart');
-}, false);
+//  Mobile Navigation Toggling
+const menuIcon = document.querySelector('.navigation__icon');
+const hamburgerIcon = document.querySelector('.navigation__hamburger');
+const navList = document.querySelector('.navigation__list');
+
+menuIcon.addEventListener('click', () => {
+  hamburgerIcon.classList.toggle('navigation__hamburger--open');
+  navList.classList.toggle('navigation__list--open');
+});
