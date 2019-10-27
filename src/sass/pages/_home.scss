@@ -1,0 +1,12 @@
+.home {
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to left,
+      rgba($clr-black, 0.8),
+      rgba($clr-black, 0.8)
+    ),
+    url('../assets/bg-home.png');
+  background-position: center;
+  background-size: cover;
+}
