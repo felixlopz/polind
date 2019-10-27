@@ -1,0 +1,40 @@
+.btn {
+  cursor: pointer;
+  outline: 0 !important;
+  border: 0 !important;
+  font-size: 0.8rem;
+  font-weight: $bold;
+  background: $clr-white;
+  color: $clr-text;
+  padding: 1.25em 1.875em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 45px;
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: $clr-white;
+    background: $clr-text;
+  }
+
+  &--primary {
+    color: $clr-primary-dark;
+    background: $clr-primary;
+
+    &:hover,
+    &:focus {
+      background: desaturate($clr-primary, 20%);
+    }
+  }
+  &--secondary {
+    color: $clr-secondary-dark;
+    background: $clr-secondary;
+
+    &:hover,
+    &:focus {
+      background: desaturate($clr-secondary, 20%);
+    }
+  }
+}
