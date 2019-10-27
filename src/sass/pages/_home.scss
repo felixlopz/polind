@@ -9,4 +9,22 @@
     url('../assets/bg-home.png');
   background-position: center;
   background-size: cover;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: $bold;
+
+    &--white {
+      color: $clr-white;
+    }
+    &--primary {
+      color: $clr-primary;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+    font-weight: $regular;
+    color: $clr-grey;
+  }
 }
