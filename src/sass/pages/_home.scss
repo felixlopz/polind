@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: 120vh;
 
   background-image: linear-gradient(
       to left,
@@ -30,8 +30,19 @@
 }
 
 .carousel{
-  height:100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  height: 20vh;
+  position: relative;
+
+  &__heading{
+    font-size: 0.8rem;
+    font-weight: $regular;
+    text-align: center;
+    color: $clr-white;
+    position: absolute;
+    top: -125%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
