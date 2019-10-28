@@ -2,6 +2,7 @@
 @import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
 // 2. Vendors
+@import 'vendors/glide';
 
 // 3. Base stuff
 @import 'base/base', 'base/fonts', 'base/typography', 'base/utilities',
@@ -11,7 +12,7 @@
 @import 'layout/header', 'layout/footer', 'layout/navigation', 'layout/grid';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button' , 'components/glide';
 
 // 6. Page-specific styles
 @import 'pages/home';
