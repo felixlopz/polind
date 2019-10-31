@@ -187,11 +187,35 @@
           Where you want to go?
         </h1>      
        <div class="custom-input">
-         <input type="text" class="custom-input__input">
-         <i class="fa fas-search"></i>
+         <input type="text" placeholder="search place" class="custom-input__input">
+         <i class="custom-input__icon fas fa-search"></i>
        </div>
-
-
+       <div class="py-5">
+          <div class="container">
+            <div class="row hidden-md-up">
+              <template class="card-template">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card__header p-2">
+                      <figure class="card__figure">
+                        <img src="./assets/kozy.png" alt="nice picture of poland">
+                      </figure>
+                    </div>
+                    <div class="card__body text-center pb-4">
+                      <h3 class="card__name">
+                        kozy
+                      </h3> 
+                      <p class="card__place">
+                        dolnoslaskie
+                      </p>
+                      <a href="#" class="btn card__btn mt-4">view offers</a>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -214,5 +238,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.min.js"></script>
+    <script src="js/places.min.js"></script>
   </body>
 </html>
