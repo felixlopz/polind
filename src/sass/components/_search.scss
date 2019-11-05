@@ -1,0 +1,26 @@
+.custom-search{
+	background: $clr-white;
+
+	&__input{
+		border: none;
+		outline: none;
+		font-size: 1rem;
+		font-weight: $regular;
+		font-family: 'Montserrat', sans-serif;
+		padding: 1.25em 1.875em;
+
+
+		&:place-holder{
+			color: pink;
+		}
+	}
+
+	&__button{
+		
+	}
+
+	&__icon{
+
+	}
+
+}

@@ -43,3 +43,13 @@ input {
   font-size: $default-fontsize;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.heading{
+	font-size: 1.8rem;
+	font-weight: $bold;
+
+	&--light{
+		color: $clr-text;
+	}
+}

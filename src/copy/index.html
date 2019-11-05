@@ -182,37 +182,40 @@
           </div>
         </div>
       </section>
-      <section class="search">
-        <h1 class="heading heading--light mb-5">
+      <section class="search pt-5">
+        <h1 class="heading heading--light mb-5 text-center">
           Where you want to go?
         </h1>      
-       <div class="custom-input">
-         <input type="text" placeholder="search place" class="custom-input__input">
-         <i class="custom-input__icon fas fa-search"></i>
+       <div class="custom-search">
+         <input 
+           type="text"
+           placeholder="Search place"
+           class="custom-search__input"
+           aria-label="text-input"
+          >
+         <button class="custom-search__submit" aria-label="button-input">
+          <i class="custom-search__icon fas fa-search"></i>
+         </button> 
        </div>
        <div class="py-5">
           <div class="container">
-            <div class="row hidden-md-up">
-              <template class="card-template">
+            <div class="row hidden-md-up places">
+             <!--  <template class="card-template">
                 <div class="col-md-4">
                   <div class="card">
                     <div class="card__header p-2">
                       <figure class="card__figure">
-                        <img src="./assets/kozy.png" alt="nice picture of poland">
+                        <img class="card__image" src="./assets/kozy.png" alt="nice picture of poland">
                       </figure>
                     </div>
                     <div class="card__body text-center pb-4">
-                      <h3 class="card__name">
-                        kozy
-                      </h3> 
-                      <p class="card__place">
-                        dolnoslaskie
-                      </p>
+                      <h3 class="card__name"></h3> 
+                      <p class="card__place"></p>
                       <a href="#" class="btn card__btn mt-4">view offers</a>
                     </div>
                   </div>
                 </div>
-              </template>
+              </template> -->
             </div>
           </div>
         </div>
