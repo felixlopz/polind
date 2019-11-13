@@ -1,26 +1,39 @@
 .custom-search{
 	background: $clr-white;
+	box-shadow: $card-box-shadow;
+	display: flex;
+
+	padding: 1.2rem 2rem;
+	width: 90%;
+	margin : 0 auto;
+	border-radius: $border-radius;
 
 	&__input{
+		font-family: 'Montserrat', sans-serif;
+		background: transparent;
+		flex-grow: 1;
 		border: none;
 		outline: none;
-		font-size: 1rem;
+		color: $clr-text-light;
+		font-size: 1.2rem;
 		font-weight: $regular;
-		font-family: 'Montserrat', sans-serif;
-		padding: 1.25em 1.875em;
 
-
-		&:place-holder{
-			color: pink;
+		&::placeholder{
+		  color: $clr-text-light;
 		}
 	}
 
-	&__button{
+	&__submit{
+		margin-left: auto;
+		background: transparent;
+		outline: none;
+		border: none;
 		
 	}
 
 	&__icon{
-
+		font-size: 1.2rem;
+		color: $clr-secondary;
 	}
 
 }

@@ -1,6 +1,13 @@
 .card{
 	border: none;
 	box-shadow: $card-box-shadow;
+	border-radius: 4px;
+
+	&__column{
+		&:not(:last-child){
+			margin-bottom: 3rem;
+		}
+	}
 
 	&__btn{
 		box-shadow: $card-box-shadow;
@@ -27,9 +34,5 @@
 		color: $clr-text-light;
 		font-size: 1rem;
 		font-weight: $regular;
-	}
-
-	&:not(:last-child){
-		margin-bottom: 3rem;
 	}
 }
