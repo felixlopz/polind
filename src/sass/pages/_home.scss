@@ -52,5 +52,10 @@
 }
 
 .explore{
+  padding-left:15px;
+  padding-right:15px;
   background: #ebedf1;
+  &__image{
+    margin: 3rem 0;
+  }
 }

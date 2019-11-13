@@ -51,5 +51,17 @@ input {
 
 	&--light{
 		color: $clr-text;
+	}	
+	&--secondary{
+		color: $clr-secondary;
+	}
+}
+
+.paragraph{
+	color: $clr-text;
+	line-height: 1.8;
+
+	&:not(:last-child){
+		margin-bottom: 3rem !important;
 	}
 }
