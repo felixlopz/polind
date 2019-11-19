@@ -94,6 +94,10 @@
     margin: 3rem auto;
   }
 
+  &__sandomierz{
+    display:none;
+  }
+
   &__btn-box{
     display:flex;
     align-items: center;
@@ -119,10 +123,55 @@
       margin: 0;
       flex-basis: 45%;
     }
+
+    &__paragraph-box{
+      margin: 4rem 0;
+    }
   }
 
    @include respond(desktop){
     padding: 5rem 0 !important;
+    position: relative;
+    overflow: hidden;
+
+    &__row{
+      max-width: 114rem;
+      margin: 0 auto;
+    }
+
+    &__sandomierz{
+      top: 50%;
+      right: -10%;
+      transform: translateY(-50%);
+      display: block;
+      position: absolute;
+      font-size: 18vw;
+      font-weight: $bold;
+      color: $clr-white;
+      text-transform: uppercase;
+      line-height: 0.8;
+    }
+
+    &__image{
+      max-width: 571px;
+      position: relative;
+
+      &::before{
+        content:'';
+        position: absolute;
+        top: 10%; 
+        left: 10%;
+        width: 95%;
+        height: 80%;
+        outline: 15px solid $clr-secondary;
+        z-index: 1;
+      }
+
+      img{
+        position: relative;
+        z-index: 2;
+      }
+    }
   }
 }
 

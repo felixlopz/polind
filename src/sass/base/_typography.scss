@@ -76,4 +76,8 @@ input {
 	@include respond(tablet){
 		font-size: 1.2rem;
 	}
+
+	@include respond(desktop){
+		font-size: 1.7rem;
+	}
 }
