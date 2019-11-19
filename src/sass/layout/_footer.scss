@@ -1,0 +1,35 @@
+.footer{
+	background: #fdfdfe;
+	position: relative;
+  width: 100%;
+  height: 50vh;
+  max-height: 640px;
+  flex-flow: column nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	
+	&::after{
+		content: 'polind';
+		position: absolute;
+		text-transform: uppercase;
+		font-size: 7rem;
+		font-weight: $bold;
+	  color: $clr-white;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+
+	&__logo, &__rights{
+		z-index: 2;
+		position: relative;
+	}
+
+	&__rights{
+		color: $clr-text;
+		font-weight: $bold;
+	}
+	
+}
