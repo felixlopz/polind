@@ -3,4 +3,9 @@
   width: 100vw;
   background: $clr-text-dark;
   z-index: 9999;
+
+
+ @include respond (tablet){
+    background: transparent;
+  }
 }

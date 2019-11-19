@@ -75,7 +75,7 @@
     left: -15px;
     background: $clr-text-dark;
     display: flex;
-    flex-flow: column center;
+    flex-flow: column nowrap;
     transition: all 0.3s ease-in-out;
     transform: translateX(-101%);
 
@@ -100,5 +100,60 @@
     font-weight: $regular;
     text-transform: capitalize;
     padding: 1rem;
+  }
+
+  @include respond(tablet){
+    
+    justify-content: space-between;
+    
+    &__icon{
+      display: none;
+    }
+
+    &__logo{
+
+      transition: opacity 0.3s ease-in;
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      &:focus-within{
+        outline: 2px solid $clr-secondary;
+      }
+    }
+
+    &__list{
+      margin: 0;
+      color: $clr-white;
+      background: transparent;
+      order: 2;
+      position: static;
+      height: 100%;
+      flex-flow: row nowrap;
+      transform: translateX(0);
+    }
+
+    &__item{
+      background: none;
+      padding-right: 0;
+      transition: opacity 0.3s ease-in;
+
+      &:hover{
+        opacity: 0.5;
+      }
+
+      &:focus-within{
+        outline: 2px solid $clr-secondary;
+      }
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+
+    &__link{
+
+    }
   }
 }
