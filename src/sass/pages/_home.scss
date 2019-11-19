@@ -27,6 +27,15 @@
     font-weight: $regular;
     color: $clr-grey;
   }
+
+  @include respond(tablet){
+    &__title {
+      font-size: 6rem;
+    }
+    &__subtitle {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .carousel{

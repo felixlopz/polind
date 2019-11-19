@@ -12,6 +12,11 @@
   border-radius: $border-radius;
   transition: all 0.3s ease-in;
 
+
+  @include respond(tablet){
+    font-size: 1.1rem;
+  }
+
   &:hover,
   &:focus {
     box-shadow: none;
@@ -37,4 +42,7 @@
       background: desaturate($clr-secondary, 20%);
     }
   }
+
+
+
 }
