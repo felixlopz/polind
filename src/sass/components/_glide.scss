@@ -73,7 +73,11 @@
 		transition: all 0.3s ease-in
 	}
 
-	 &__info, &__title, &__subtitle{
+	&__btn{
+		font-size: 0.8rem;
+	}
+
+	&__info, &__title, &__subtitle{
 		transition: all 0.3s ease-in
 	}
 

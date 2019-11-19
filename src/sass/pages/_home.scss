@@ -53,6 +53,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  
+  @include respond(tablet){
+    &__heading{
+      font-size: 1.2rem;
+    }
+  }
 }
 
 
@@ -64,8 +70,37 @@
   padding-left:15px;
   padding-right:15px;
   background: #ebedf1;
+
   &__image{
-    margin: 3rem 0;
+    max-width: 300px;
+    margin: 3rem auto;
+  }
+
+  &__btn-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include respond(tablet){
+    &__row{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__btn-box{
+      display: block;
+    }
+    
+    &__info{
+      flex-basis: 50%;
+    }
+
+    &__image{
+      max-width: none;
+      margin: 0;
+      flex-basis: 45%;
+    }
   }
 }
 
