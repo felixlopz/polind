@@ -17,6 +17,10 @@
     font-size: 1.1rem;
   }
 
+  @include respond(tablet){
+    font-size: 1.4rem;
+  }
+
   &:hover,
   &:focus {
     box-shadow: none;
@@ -42,7 +46,4 @@
       background: desaturate($clr-secondary, 20%);
     }
   }
-
-
-
 }

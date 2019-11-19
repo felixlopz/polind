@@ -36,6 +36,15 @@
       font-size: 1.8rem;
     }
   }
+
+  @include respond(desktop){
+    &__title {
+      font-size: 9rem;
+    }
+    &__subtitle {
+      font-size: 2rem;
+    }
+  }
 }
 
 .carousel{
@@ -59,11 +68,20 @@
       font-size: 1.2rem;
     }
   }
+  @include respond(desktop){
+    &__heading{
+      font-size: 1.4rem;
+    }
+  }
 }
 
 
 .search{
   background: #fafafb;
+
+  @include respond(desktop){
+    padding: 5rem 0 !important;
+  }
 }
 
 .explore{
@@ -91,7 +109,7 @@
     &__btn-box{
       display: block;
     }
-    
+
     &__info{
       flex-basis: 50%;
     }
@@ -101,6 +119,10 @@
       margin: 0;
       flex-basis: 45%;
     }
+  }
+
+   @include respond(desktop){
+    padding: 5rem 0 !important;
   }
 }
 

@@ -35,5 +35,32 @@
 		color: $clr-text-light;
 		font-size: 1rem;
 		font-weight: $regular;
+	}		
+
+	@include respond(desktop){
+		&__btn{
+		 	background: $clr-white;
+			color: $clr-text;
+
+	     &:hover,
+		   &:focus {
+		    box-shadow: none;
+		    color: $clr-white;
+		    background: $clr-text;
+		  }
+		}
+
+		&:hover{
+			.card__btn{
+				color: $clr-secondary-dark;
+		    background: $clr-secondary;
+
+		    &:hover,
+		    &:focus {
+		      background: desaturate($clr-secondary, 20%);
+		      color: $clr-white;
+		    }
+			}
+		}
 	}
 }
