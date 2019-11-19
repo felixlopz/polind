@@ -12,9 +12,14 @@ window.addEventListener('load', function() {
   const glideConfig = {
     type: 'carousel',
     startAt: 2,
-    perView: 2,
+    perView: 5,
     focusAt: 'center',
     gap: 20,
+    breakpoints:{
+      1024:{
+        perView:2,
+      }
+    }
   };
 
   new Glide('.glide', glideConfig ).mount();
