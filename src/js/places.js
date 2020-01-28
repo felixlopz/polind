@@ -41,7 +41,7 @@ function getCardTemplate({name,place,img}){
 			<div class="card">
 	      <div class="card__header p-2">
 	        <figure class="card__figure">
-	          <img class="card__image" src="./assets/${img}.png" alt="nice picture of poland">
+	          <img class="card__image" src="./assets/${img}.jpg" alt="nice picture of poland">
 	        </figure>
 	      </div>
 	      <div class="card__body text-center pb-4">
