@@ -4,12 +4,12 @@
  */
 
 var settings = {
-  clean: true,
+  clean: false,
   scripts: true,
   polyfills: true,
   styles: true,
   svgs: false,
-  images: true,
+  images: false,
   copy: true,
   reload: true
 };
@@ -35,7 +35,7 @@ var paths = {
     output: 'dist/svg/'
   },
   images: {
-    input: 'src/assets/*.{jpeg,png,gif,svg}',
+    input: 'src/assets/*.{jpeg,png,gif,svg,jpg}',
     output: 'dist/assets/'
   },
   copy: {
