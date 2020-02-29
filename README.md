@@ -2,7 +2,7 @@
 
 Landing page for a company that offers awesome trips in Poland
 
-## [Live Demo](https://fx-polind.netlify.com/)
+## [Live Demo](https://polind.felixlopez.tech/)
 
 ## Features
 
